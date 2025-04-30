@@ -47,5 +47,31 @@ int main() {
         printf("Passo %d: Esquerda\n", i);
     }
 
+    // ----------------------------------
+    // MOVIMENTO DO CAVALO (NÍVEL AVENTUREIRO)
+    // ----------------------------------
+    // Quantas vezes o cavalo fará o movimento completo em L
+    const int movimentos = 3;
+
+    // Exibe o tipo de movimentação
+    printf("Movimentação do Cavalo (forma de L: 2 para baixo e 1 para esquerda):\n");
+
+    // Loop externo define quantas vezes o movimento em L será feito
+    for (int i = 1; i <= movimentos; i++) {
+        printf("Movimento %d:\n", i);
+
+        // Loop interno 1: andar 2 vezes para baixo (usando while)
+        int j = 1;
+        while (j <= 2) {
+            printf("  Passo %d: Baixo\n", j);
+            j++;
+        }
+
+        // Movimento final do L: 1 vez para esquerda
+        printf("  Passo 3: Esquerda\n");
+
+        printf("\n"); // Espaço entre os movimentos
+    }
+
     return 0; // Indica que o programa terminou com sucesso
 }
